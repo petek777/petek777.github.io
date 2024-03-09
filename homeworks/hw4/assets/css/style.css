@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    position: sticky;
+    top: 0;
+    right: 50;
+    z-index: 1000;
+    /* PROBLEM 1: Make the header stick to the top as you scroll */
+
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+    /* PROBLEM 2: Align the page content to the center of the screen */
+
+}
+
+#image-banner {
+    background-image: url('../img/sf_banner.png');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+#other-posts {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.image-card, .image-card-color-overlay {
+    width: 380px;
+    height: 200px;
+
+}
+
+.image-card {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    margin-right: 40px;
+    position: relative;
+    /* PROBLEM 3: Give .image-card the appropriate position type */
+
+}
+
+.image-card:last-child {
+    margin-right: 0;
+}
+
+.image-card img {
+    width: 100%;
+}
+
+.image-card-color-overlay {
+    position: absolute;
+    /* PROBLEM 4: Move the color overlay to cover the image properly */
+    top: 0px;
+    left: 0px;
+    /* PROBLEM 5: What should the opacity be when there is no hover? */
+    opacity: 0;
+    transition: 0.3s;
+    background-color: navy;
+}
+
+.image-card:hover .image-card-color-overlay {
+    /* PROBLEM 5: Pick an opacity for the blue hover effect */
+    opacity: 0.7;
+}
+
+.image-card-text {
+    /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    font-size: 24px;
+    color: white;
+    
+}
+
+
+/* PROBLEM 7: Improve the typography and colors of this page! */
+/* Title style */
+#title {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Heading 1 style */
+  h1 {
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  /* Heading 2 style */
+  h2 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  /* Heading 3 style */
+  h3 {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 20px;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+  }
+  
+  /* Paragraph style */
+  p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
